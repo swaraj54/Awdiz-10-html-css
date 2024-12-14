@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:invalid,
+      textarea:invalid {
+        background-color: red;
+      }
+      input:valid,
+      textarea:valid {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <input value="swaraj54" readonly />
+    <input value="swaraj54" disabled />
+
+    <label>Type your Name</label><br />
+    <input value="Awdiz" minlength="5" maxlength="12" /><br />
+    <label>Type your Message.</label><br />
+    <textarea minlength="10" maxlength="20"></textarea>
+
+    <input type="date" min="2019-12-25" max="2019-12-27" step="1">
+    <input type="month" min="2019-12" step="12">
+    <input type="week" min="2019-W23" step="">
+    <input type="time" min="09:00" step="900">
+    <input type="number" min="0" step="5" max="100">
+    <input type="range" min="60" step="5" max="100"> 
+   
+    
+    <input value="Awdiz" pattern="\w{4,10}" />
+    <input pattern="\d{4,4}" />
+
+    <form>
+      <label>Email :</label><br />
+      <input type="email" required autofocus /><br />
+      <label>Password :</label><br />
+      <input type="password" required /><br />
+      <input type="submit" /><br />
+    </form>
+  </body>
+</html>
