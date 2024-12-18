@@ -1,0 +1,40 @@
+.border-black {
+  border: 4px solid black;
+  opacity: 0.4;
+}
+
+.bg-image {
+  width: 100%;
+  height: 800px;
+  border: 2px solid red;
+  font-size: 52px;
+  color: white;
+  text-align: center;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  background-image: url("../images/shopping.webp");
+}
+
+.border-testing {
+  /* border: 4px solid red; */
+  /* border: 4px dashed red; */
+  /* border: 4px dotted red; */
+  /* border: 4px double red; */
+  /* border: 10px groove red; */
+  /* border: 10px ridge red; */
+  /* border: 10px inset red; */
+  border: 10px outset red;
+}
+
+.border-none {
+  border: none;
+  outline: none;
+}
+
+.br-10 {
+    border: 9px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 120px;
+}
