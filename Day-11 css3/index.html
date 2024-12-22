@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parentContainer {
+        display: flex;
+        height: 1400px;
+      }
+      .yellowDiv {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: yellow;
+      }
+      .blueDiv {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: blue;
+        position: relative;
+        top: 150px;
+        left: 150px;
+        position: absolute;
+        top :100px;
+        left : 100px;
+        position: sticky;
+        top : 0px;
+        left: 0px;
+      }
+      .overflowContainer {
+        width: 400px;
+        height: 60px;
+        border: 2px solid black;
+        overflow: hidden;
+        overflow: scroll;
+        overflow: auto;
+      }
+      .centerContainer {
+        width: 50%;
+        border: 2px solid black;
+        /* margin-left: 25%; */
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .flexContainer {
+        display: flex;
+       gg
+      .childrenContainer {
+        padding: 100px;
+        text-align: center;
+        font-size: 42px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentContainer">
+      <div class="yellowDiv"></div>
+      <div class="blueDiv"></div>
+      <div class="yellowDiv"></div>
+    </div>
+
+    <div class="overflowContainer">
+      This is div element.This is div element.This is div element.This is div
+      element.This is div element.This is div element.This is div element.This
+      is div element.This is div element.This is div element.This is div
+      element.This is div element.This is div element.
+    </div>
+
+    <div class="centerContainer">This is div - 50%</div>
+    <img src="../images/shopping.webp" />
+
+    <div class="flexContainer">
+      <div class="childrenContainer">1</div>
+      <div class="childrenContainer">2</div>
+      <div class="childrenContainer">3</div>
+    </div>
+  </body>
+</html>
