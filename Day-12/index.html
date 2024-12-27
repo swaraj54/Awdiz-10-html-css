@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .leftSideFilter {
+        width: 20%;
+        border: 2px solid red;
+      }
+      .parentContainer {
+        width: 78%;
+        border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        justify-content: space-around;
+      }
+      .childrenContainer {
+        border: 2px solid blue;
+        width: 18%;
+        height: 300px;
+        text-align: center;
+        font-size: 32px;
+        /* padding: 80px; */
+        display: flex;
+        align-items: center;
+        /* vertically cetner alignment */
+        justify-content: center;
+        margin-bottom: 20px;
+        /* horizontally center alignment */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftSideFilter">Filter</div>
+      <div class="parentContainer">
+        <div class="childrenContainer">
+          <p>1</p>
+        </div>
+        <div class="childrenContainer">
+          <p>2</p>
+        </div>
+        <div class="childrenContainer">
+          <p>3</p>
+        </div>
+        <div class="childrenContainer">
+          <p>4</p>
+        </div>
+        <div class="childrenContainer">
+          <p>5</p>
+        </div>
+        <div class="childrenContainer">
+          <p>6</p>
+        </div>
+        <div class="childrenContainer">
+          <p>7</p>
+        </div>
+        <div class="childrenContainer">
+          <p>8</p>
+        </div>
+        <div class="childrenContainer">
+          <p>9</p>
+        </div>
+        <div class="childrenContainer">
+          <p>10</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
