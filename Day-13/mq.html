@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .myDiv {
+        
+        color: red;
+        background-color: aqua;
+      }
+
+      /* @media (min-width: 700px) {
+        .myDiv {
+          color: white;
+          background-color: brown;
+        }
+      }
+      @media (max-width: 700px) {
+        .myDiv {
+          color: white;
+          background-color: brown;
+        }
+      } */
+
+      @media (min-width: 250px) and (max-width: 550px) {
+      }
+
+      @media (min-width: 551px) and (max-width: 850px) {
+        /* 500px - 800px  */
+        .myDiv {
+          background-color: brown;
+        }
+      }
+
+      @media (min-width: 851px) and (max-width: 1450px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myDiv">Testing media query</div>
+  </body>
+</html>

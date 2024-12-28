@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .screen {
+        border: 5px solid blue;
+      }
+      .filter {
+        height: 140px;
+        border: 5px solid red;
+      }
+      .sectionContainer {
+        display: flex;
+        justify-content: space-around;
+      }
+      .leftFilter {
+        width: 20%;
+        border: 2px solid green;
+        height: 600px;
+      }
+      .productsContainer {
+        width: 80%;
+        border: 2px solid green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .childrenContainer {
+        height: 270px;
+        width: 23%;
+        margin-bottom: 10px;
+        border: 1px solid rgb(192, 191, 191);
+      }
+
+      @media (max-width: 550px) {
+        .leftFilter {
+          display: none;
+        }
+
+        .productsContainer {
+          width: 100%;
+          flex-direction: row-reverse;
+        }
+        .childrenContainer {
+          width: 50%;
+          margin-bottom: 0px;
+        }
+      }
+      @media (min-width: 551px) and (max-width: 900px) {
+        .childrenContainer {
+          width: 32%;
+          margin-bottom: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="filter">Filters</div>
+      <div class="sectionContainer">
+        <div class="leftFilter">Left side filter</div>
+        <div class="productsContainer">
+          <div class="childrenContainer">1</div>
+          <div class="childrenContainer">2</div>
+          <div class="childrenContainer">3</div>
+          <div class="childrenContainer">4</div>
+          <div class="childrenContainer">5</div>
+          <div class="childrenContainer">6</div>
+          <div class="childrenContainer">7</div>
+          <div class="childrenContainer">8</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        border: 2px solid black;
+        display: flex;
+      }
+      .icon {
+        width: 30%;
+        border: 2px solid red;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navigations {
+        width: 70%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+      }
+      .menuIcon {
+        display: none;
+      }
+
+      .navigations > div:first-child {
+        color: red;
+      }
+      .navigations > div:last-child {
+        color: red;
+      }
+      .navigations > div:nth-child(3) {
+        color: red;
+      }
+
+      @media (max-width: 550px) {
+        .navigations {
+          display: none;
+        }
+        .navbar {
+          justify-content: space-between;
+        }
+        .menuIcon {
+          display: block;
+          width: 20%;
+          border: 2px solid red;
+        }
+      }
+      .parent > div {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>
+        before
+        <div>1</div>
+        <div>2</div>
+        <div>
+          3
+          <div>3.1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="icon">
+        <p>Icon</p>
+      </div>
+      <div class="navigations">
+        <div class="seperateStlye"><p>Home</p></div>
+        <div><p>Home</p></div>
+        <div><p>Home</p></div>
+        <div><p>Home</p></div>
+        <div><p>Home</p></div>
+        <div><p>Home</p></div>
+        <div><p>Home</p></div>
+        <div><p>Home</p></div>
+      </div>
+      <div class="menuIcon">Icon</div>
+    </div>
+  </body>
+</html>
