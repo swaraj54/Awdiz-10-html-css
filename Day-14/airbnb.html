@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Airbnb Cereal VF, Circular, -apple-system,
+          BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+      }
+      #screen {
+        width: 100%;
+        border: 5px solid red;
+      }
+      #header {
+        width: 100%;
+        height: 164px;
+        /* border: 5px solid blue; */
+        border-bottom: 1px solid rgb(220, 219, 219);
+      }
+      #togglebar {
+        height: 82px;
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #logoSection {
+        width: 20%;
+      }
+      #switchSection {
+        width: 16%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-around;
+      }
+      #profileSecion {
+        width: 22%;
+        /* border: 1px solid blue; */
+        display: flex;
+        align-items: center;
+      }
+      #homeSection {
+        height: 40px;
+        /* border: 1px solid blue; */
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        padding: 0px 10px;
+      }
+
+      #homeSection:hover {
+        background-color: rgb(245, 245, 245);
+      }
+      #locationSection {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 6px;
+        margin-left: 6px;
+      }
+      #locationSection:hover {
+        background-color: rgb(245, 245, 245);
+      }
+      #profileContainer {
+        display: flex;
+        align-items: center;
+        width: 90px;
+        justify-content: space-between;
+        border: 1px solid rgb(220, 219, 219);
+        padding: 6px 14px;
+        border-radius: 26px;
+      }
+
+      #searchbar {
+        height: 68px;
+        width: 60%;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+      }
+      .seachGuestSection {
+        width: 30%;
+        height: 66px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+      }
+      .seachGuestSection:hover {
+        background-color: rgb(245, 245, 245);
+      }
+      .checkSection {
+        width: 20%;
+        height: 66px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+      }
+      .checkSection:hover {
+        background-color: rgb(245, 245, 245);
+      }
+      .underSection {
+        width: 100%;
+        height: 33px;
+        border-right: 1px solid rgb(220, 219, 219);
+        padding: 0px 30px;
+      }
+      .inputStyle {
+        background-color: white;
+        border: none;
+        outline: none;
+      }
+      .inputStyle:hover {
+        background-color: rgb(245, 245, 245);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <div id="header">
+        <div id="togglebar">
+          <div id="logoSection">
+            <img src="./assets/logo.svg" />
+          </div>
+          <div id="switchSection">
+            <div>
+              <p style="font-weight: 600">Stays</p>
+            </div>
+            <div>Experiences</div>
+          </div>
+          <div id="profileSecion">
+            <div>
+              <h5 id="homeSection">Airbnb your home</h5>
+            </div>
+            <div id="locationSection">
+              <img src="./assets/location.svg" />
+            </div>
+            <div id="profileContainer">
+              <div>
+                <img src="./assets/sandwich2.svg" />
+              </div>
+              <div>
+                <img src="./assets/profile.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="searchbar">
+          <div class="seachGuestSection">
+            <div class="underSection">
+              <h5>Where</h5>
+              <input class="inputStyle" placeholder="Search destinations" />
+            </div>
+          </div>
+          <div class="checkSection">
+            <div class="underSection">
+              <h5>Check In</h5>
+              <h5>Add dates</h5>
+            </div>
+          </div>
+          <div class="checkSection">
+            <div class="underSection">
+              <h5>Check Out</h5>
+              <h5>Add dates</h5>
+            </div>
+          </div>
+          <div class="seachGuestSection">
+            <div class="underSection">
+              <h5>Who</h5>
+              <h5>Add guest</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="body">Body</div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
