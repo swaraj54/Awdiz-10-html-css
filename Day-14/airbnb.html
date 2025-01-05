@@ -14,13 +14,14 @@
       }
       #screen {
         width: 100%;
-        border: 5px solid red;
+        /* border: 5px solid red; */
       }
       #header {
         width: 100%;
         height: 164px;
         /* border: 5px solid blue; */
         border-bottom: 1px solid rgb(220, 219, 219);
+        margin-bottom: 10px;
       }
       #togglebar {
         height: 82px;
@@ -124,6 +125,135 @@
       .inputStyle:hover {
         background-color: rgb(245, 245, 245);
       }
+      #mobileHeader {
+        width: 100%;
+        /* border: 2px solid blue; */
+        height: 60px;
+        display: none;
+      }
+      #mobileHeaderSearchContainer {
+        border: 1px solid black;
+        height: 46px;
+        width: 90%;
+        margin: auto;
+        border-radius: 28px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #searchBodyContainer {
+        width: 90%;
+        margin: auto;
+        height: 80px;
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      #sectionContainer {
+        width: 70%;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+      }
+      #sectionCard {
+        width: 10%;
+        /* border: 2px solid black; */
+        text-align: center;
+      }
+      #sectionCard > img {
+        width: 38%;
+        height: 38%;
+      }
+      #sectionCard > p {
+        font-size: 12px;
+      }
+      #filterButtonConatiner {
+        width: 8%;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+      }
+      #filterCard {
+        border: 1px solid black;
+        border-radius: 14px;
+        width: 100%;
+        display: flex;
+        padding: 18px 10px;
+        justify-content: center;
+      }
+      #filterCard > p {
+        font-size: 14px;
+        margin-left: 6px;
+      }
+      #priceTaxContainer {
+        width: 19%;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+      }
+      #priceTaxCard {
+        border: 1px solid black;
+        border-radius: 14px;
+        width: 100%;
+        display: flex;
+        padding: 18px 10px;
+        justify-content: center;
+      }
+      #priceTaxCard > p {
+        font-size: 14px;
+      }
+
+      #staysContainer {
+        width: 90%;
+        margin: auto;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .staysCard {
+        height: 400px;
+        /* border: 2px solid black; */
+        width: 24%;
+        margin-bottom: 20px;
+        border-radius: 14px;
+      }
+
+      .staysCard > p {
+        font-size: 14px;
+      }
+      .staysCard > img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 14px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 743px) {
+        #header {
+          display: none;
+        }
+        #mobileHeader {
+          display: block;
+          display: flex;
+        }
+        .staysCard {
+          width: 48%;
+        }
+        #sectionContainer {
+          width: 100%;
+        }
+        #filterButtonConatiner {
+          display: none;
+        }
+        #priceTaxContainer {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -183,7 +313,175 @@
           </div>
         </div>
       </div>
-      <div id="body">Body</div>
+      <div id="mobileHeader">
+        <div id="mobileHeaderSearchContainer">
+          <img src="./assets/search2.svg" />
+          <p>Start your search</p>
+        </div>
+      </div>
+      <div id="body">
+        <div id="searchBodyContainer">
+          <div id="sectionContainer">
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+            <div id="sectionCard">
+              <img
+                src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+              />
+              <p>Farms</p>
+            </div>
+          </div>
+          <div id="filterButtonConatiner">
+            <div id="filterCard">
+              <img src="./assets/filter.svg" />
+              <p>Filters</p>
+            </div>
+          </div>
+          <div id="priceTaxContainer">
+            <div id="priceTaxCard">
+              <p>Display total before taxes</p>
+            </div>
+          </div>
+        </div>
+        <div id="staysContainer">
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+          <div class="staysCard">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1286208323180296244/original/59132e17-641d-468c-88a6-289952403d08.jpeg?im_w=720&im_format=avif"
+            />
+            <p>India</p>
+            <p>45 km</p>
+            <p>5-10 Jan</p>
+            <p>20,000/-</p>
+          </div>
+        </div>
+      </div>
       <div id="footer">Footer</div>
     </div>
   </body>
